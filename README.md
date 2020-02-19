@@ -15,6 +15,9 @@ Copyright (C) 2018 Nodos \<http://nodos.pe\>
 
 	http://localhost:8888/api-tools/swagger
 
+## Crear base de datos
+
+	CREATE DATABASE breinapi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ## Acceder a phinx
 
@@ -24,3 +27,4 @@ Copyright (C) 2018 Nodos \<http://nodos.pe\>
 Util para crear tablas
 
 	vendor/bin/phinx create MyFirstMigration
+

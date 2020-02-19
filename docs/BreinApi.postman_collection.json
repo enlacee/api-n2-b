@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "7e77b831-398e-4353-ab15-77cb4c27900c",
+		"name": "BreinApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8888/admin_users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"admin_roles_id\": \"1\",\n  \"name\": \"pepe\",\n  \"username\": \"pepe\",\n  \"password\": \"123456\",\n  \"active\": \"1\",\n  \"is_superuser\": \"0\",\n  \"created_at\": \"2020-01-01 01:01:01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/admin_users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"admin_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/admin_users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8888/admin_users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"admin_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/admin_users/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.238.99.246:8888/admin_users/1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"238",
+						"99",
+						"246"
+					],
+					"port": "8888",
+					"path": [
+						"admin_users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.238.99.246:8888/admin_users/3",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"pepe rios editado\",\n  \"active\": \"1\",\n  \"is_superuser\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.238.99.246:8888/admin_users/3",
+					"protocol": "http",
+					"host": [
+						"10",
+						"238",
+						"99",
+						"246"
+					],
+					"port": "8888",
+					"path": [
+						"admin_users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.238.99.246:8888/admin_users/4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.238.99.246:8888/admin_users/4",
+					"protocol": "http",
+					"host": [
+						"10",
+						"238",
+						"99",
+						"246"
+					],
+					"port": "8888",
+					"path": [
+						"admin_users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

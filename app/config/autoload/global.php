@@ -9,4 +9,11 @@ return [
             'BrainDBAdapter' => [],
         ],
     ],
+    'api-tools-mvc-auth' => [
+        'authentication' => [
+            'map' => [
+                'Brein\\V1' => 'basic',
+            ],
+        ],
+    ],
 ];

@@ -27,4 +27,5 @@ return [
     'Laminas\\ApiTools\\Versioning',
     'Laminas\\ApiTools\\Documentation\\Swagger',
     'Application',
+    'Brein',
 ];
