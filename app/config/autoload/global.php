@@ -6,6 +6,7 @@ return [
     'db' => [
         'adapters' => [
             'dummy' => [],
+            'BrainDBAdapter' => [],
         ],
     ],
 ];
