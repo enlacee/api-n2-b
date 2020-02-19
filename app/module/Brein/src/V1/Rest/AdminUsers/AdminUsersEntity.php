@@ -10,6 +10,8 @@ class AdminUsersEntity extends ArrayObject
 
 	public $name;
 
+	public $lastname;
+
 	public $username;
 
 	public $active;
@@ -26,6 +28,7 @@ class AdminUsersEntity extends ArrayObject
 		return array(
 			'id' => $this->id,
 			'name' => $this->name,
+			'lastname' => $this->lastname,
 			'username' => $this->username,
 			'active' => $this->active,
 			'is_superuser' => $this->is_superuser,
@@ -38,6 +41,7 @@ class AdminUsersEntity extends ArrayObject
 	{
 		$this->id = $array['id'];
 		$this->name = $array['name'];
+		$this->lastname = $array['lastname'];
 		$this->username = $array['username'];
 		$this->active = $array['active'];
 		$this->is_superuser = $array['is_superuser'];

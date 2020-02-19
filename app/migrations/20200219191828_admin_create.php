@@ -24,6 +24,7 @@ CREATE TABLE admin_users (
   id BIGINT(11) AUTO_INCREMENT NOT NULL,
   admin_roles_id BIGINT(11) NOT NULL,
   name VARCHAR(50) NOT NULL,
+  lastname VARCHAR(50) NOT NULL,
   username VARCHAR(24) NOT NULL UNIQUE,
   email VARCHAR(100),
   password CHAR(60) NOT NULL,
