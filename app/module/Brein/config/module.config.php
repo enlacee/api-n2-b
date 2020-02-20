@@ -554,6 +554,22 @@ return [
                     'DELETE' => true,
                 ],
             ],
+            'Brein\\V1\\Rest\\Login\\Controller' => [
+                'collection' => [
+                    'GET' => false,
+                    'POST' => true,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
+                'entity' => [
+                    'GET' => false,
+                    'POST' => false,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
+            ],
         ],
     ],
     'service_manager' => [
