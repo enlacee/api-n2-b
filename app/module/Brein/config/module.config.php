@@ -192,6 +192,7 @@ return [
                 'hydrator_name' => \Laminas\Hydrator\ArraySerializable::class,
                 'controller_service_name' => 'Brein\\V1\\Rest\\AdminRoles\\Controller',
                 'entity_identifier_name' => 'id',
+                'resource_class' => \Brein\V1\Rest\AdminRoles\AdminRolesResource::class,
             ],
             \Brein\V1\Rest\AdminUsers\AdminUsersResource::class => [
                 'adapter_name' => 'BrainDBAdapter',
@@ -266,7 +267,7 @@ return [
             ],
             2 => [
                 'name' => 'resources',
-                'required' => true,
+                'required' => false,
                 'filters' => [
                     0 => [
                         'name' => \Laminas\Filter\StringTrim::class,
@@ -275,15 +276,7 @@ return [
                         'name' => \Laminas\Filter\StripTags::class,
                     ],
                 ],
-                'validators' => [
-                    0 => [
-                        'name' => \Laminas\Validator\StringLength::class,
-                        'options' => [
-                            'min' => 1,
-                            'max' => '65535',
-                        ],
-                    ],
-                ],
+                'validators' => [],
             ],
             3 => [
                 'name' => 'active',
@@ -300,7 +293,7 @@ return [
             ],
             4 => [
                 'name' => 'created_at',
-                'required' => true,
+                'required' => false,
                 'filters' => [],
                 'validators' => [],
             ],
@@ -465,7 +458,7 @@ return [
             ],
             7 => [
                 'name' => 'created_at',
-                'required' => true,
+                'required' => false,
                 'filters' => [],
                 'validators' => [],
             ],

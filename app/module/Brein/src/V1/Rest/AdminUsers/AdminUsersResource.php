@@ -4,6 +4,7 @@ namespace Brein\V1\Rest\AdminUsers;
 
 use Laminas\ApiTools\DbConnectedResource;
 use Laminas\Paginator\Adapter\DbTableGateway as TableGatewayPaginator;
+use Laminas\ApiTools\ApiProblem\ApiProblem;
 
 class AdminUsersResource extends DbConnectedResource
 {
