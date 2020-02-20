@@ -30,7 +30,7 @@ class Module implements ApiToolsProviderInterface
 					$adapter = $sm->get('BrainDBAdapter');
 
 					return new LoginMapper($adapter);
-				}
+				},
 			)
 		);
 	}
