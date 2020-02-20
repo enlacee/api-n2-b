@@ -40,7 +40,7 @@ return [
     ],
     'api-tools-rest' => [
         'Brein\\V1\\Rest\\AdminRoles\\Controller' => [
-            'listener' => 'Brein\\V1\\Rest\\AdminRoles\\AdminRolesResource',
+            'listener' => \Brein\V1\Rest\AdminRoles\AdminRolesResource::class,
             'route_name' => 'brein.rest.admin-roles',
             'route_identifier_name' => 'admin_roles_id',
             'collection_name' => 'admin_roles',
@@ -186,7 +186,7 @@ return [
     ],
     'api-tools' => [
         'db-connected' => [
-            'Brein\\V1\\Rest\\AdminRoles\\AdminRolesResource' => [
+            \Brein\V1\Rest\AdminRoles\AdminRolesResource::class => [
                 'adapter_name' => 'BrainDBAdapter',
                 'table_name' => 'admin_roles',
                 'hydrator_name' => \Laminas\Hydrator\ArraySerializable::class,
@@ -511,6 +511,12 @@ return [
                         ],
                     ],
                 ],
+            ],
+            11 => [
+                'required' => true,
+                'validators' => [],
+                'filters' => [],
+                'name' => 'lastname',
             ],
         ],
     ],

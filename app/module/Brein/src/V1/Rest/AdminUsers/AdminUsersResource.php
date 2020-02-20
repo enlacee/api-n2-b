@@ -9,16 +9,6 @@ use Laminas\ApiTools\ApiProblem\ApiProblem;
 class AdminUsersResource extends DbConnectedResource
 {
 
-	public function create($data)
-	{
-		return parent::create($data);
-	}
-
-	public function update($id, $data)
-	{
-		return parent::update($id, $data);
-	}
-
 	public function patch($id, $data)
 	{
 
@@ -51,20 +41,5 @@ class AdminUsersResource extends DbConnectedResource
 		}
 
 		return true;
-	}
-
-	public function delete($id)
-	{
-		return parent::delete($id);
-	}
-
-	public function fetch($id)
-	{
-		return parent::fetch($id);
-	}
-
-	public function fetchAll($data = [])
-	{
-		return parent::fetch($data);
 	}
 }
