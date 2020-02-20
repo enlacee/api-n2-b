@@ -36,7 +36,8 @@
         "laminas/laminas-component-installer": "^1.1.1 || ^2.1.1",
         "laminas/laminas-development-mode": "^3.2",
         "laminas/laminas-zendframework-bridge": "^1.0",
-        "robmorgan/phinx": "^0.11.4"
+        "robmorgan/phinx": "^0.11.4",
+        "zfr/zfr-cors": "1.*"
     },
     "require-dev": {
         "laminas-api-tools/api-tools-admin": "^1.6",

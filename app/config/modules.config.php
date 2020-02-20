@@ -26,6 +26,7 @@ return [
     'Laminas\\ApiTools\\Rpc',
     'Laminas\\ApiTools\\Versioning',
     'Laminas\\ApiTools\\Documentation\\Swagger',
+    'ZfrCors',
     'Application',
     'Brein',
 ];
