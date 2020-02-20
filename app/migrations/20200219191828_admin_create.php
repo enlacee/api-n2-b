@@ -14,7 +14,7 @@ CREATE TABLE admin_roles (
   resources TEXT NOT NULL,
   active TINYINT(1) NOT NULL DEFAULT '1',
   created_at DATETIME NOT NULL,
-  updated_at DATETIME,
+  updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
   created_by BIGINT(11),
   updated_by BIGINT(11),
   PRIMARY KEY(id)
@@ -31,7 +31,7 @@ CREATE TABLE admin_users (
   active TINYINT(1) NOT NULL DEFAULT '1',
   is_superuser TINYINT(1) NOT NULL DEFAULT '0',
   created_at DATETIME NOT NULL,
-  updated_at DATETIME,
+  updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
   created_by BIGINT(11),
   updated_by BIGINT(11),
   PRIMARY KEY(id),

@@ -8,6 +8,8 @@ class AdminUsersEntity extends ArrayObject
 
 	public $id;
 
+	public $admin_roles_id;
+
 	public $name;
 
 	public $lastname;
@@ -27,6 +29,7 @@ class AdminUsersEntity extends ArrayObject
 	{
 		return array(
 			'id' => $this->id,
+			'admin_roles_id' => $this->admin_roles_id,
 			'name' => $this->name,
 			'lastname' => $this->lastname,
 			'username' => $this->username,
@@ -40,6 +43,7 @@ class AdminUsersEntity extends ArrayObject
 	public function exchangeArray($array)
 	{
 		$this->id = $array['id'];
+		$this->admin_roles_id = $array['admin_roles_id'];
 		$this->name = $array['name'];
 		$this->lastname = $array['lastname'];
 		$this->username = $array['username'];

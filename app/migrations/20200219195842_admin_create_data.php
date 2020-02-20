@@ -52,6 +52,16 @@ class AdminCreateData extends AbstractMigration
                 'is_superuser' => 0,
                 'created_at' => date('Y-m-d H:i:s'),
             ],
+            [
+                'admin_roles_id' => 2,
+                'name' => 'Pepe',
+                'lastname' => 'Rios',
+                'username' => 'pepe',
+                'password' => '123456',
+                'active' => 1,
+                'is_superuser' => 0,
+                'created_at' => date('Y-m-d H:i:s'),
+            ],
         ];
 
         $this->table('admin_users')
