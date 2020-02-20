@@ -7,45 +7,41 @@ use Laminas\Paginator\Adapter\DbTableGateway as TableGatewayPaginator;
 
 class AdminUsersResource extends DbConnectedResource
 {
-	public function fetchAll($data = array())
+	public function create($data)
 	{
-		var_dump($data);exit;
-		// WHERE CLAUSE
-		$where = '';
-		foreach($data->where as $clause)
-		{
-		$where .= $clause.' AND ';
-		}
-		//chop off the last AND
-		$where = substr($where,0,-4);
+		return parent::create($data);
+	}
 
-		// ORDER CLAUSE
-		$order = '';
-		foreach($data->order as $clause)
-		{
-		$order .= $clause.' , ';
-		}
-		//chop off the last comma
-		$order = substr($order,0,-2);
+	public function update($id, $data)
+	{
+		return parent::update($id, $data);
+	}
 
-		// GROUP CLAUSE
-		$group = '';
-		foreach($data->group as $clause)
-		{
-		$group .= $clause.' , ';
+	public function patch($id, $data)
+	{
+		if (
+			is_object($data) &&
+			isset($data->password) &&
+			empty($data->password)
+		) {
+			unset($data->password);
 		}
-		//chop off the last comma
-		$group = substr($group,0,-2);
 
-		// HAVING CLAUSE
-		$having = '';
-		foreach($data->having as $clause)
-		{
-		$having .= $clause.' AND ';
-		}
-		//chop off the last AND
-		$having = substr($having,0,-4);
-		$adapter = new TableGatewayPaginator($this->table,$where, $order, $group, $having);
-		return new $this->collectionClass($adapter);
+		return parent::patch($id, $data);
+	}
+
+	public function delete($id)
+	{
+		return parent::delete($id);
+	}
+
+	public function fetch($id)
+	{
+		return parent::fetch($id);
+	}
+
+	public function fetchAll($data = [])
+	{
+		return parent::fetch($data);
 	}
 }

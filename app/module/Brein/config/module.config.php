@@ -200,6 +200,7 @@ return [
                 'controller_service_name' => 'Brein\\V1\\Rest\\AdminUsers\\Controller',
                 'entity_identifier_name' => 'id',
                 'table_service' => 'Brein\\V1\\Rest\\AdminUsers\\AdminUsersResource\\Table',
+                'resource_class' => \Brein\V1\Rest\AdminUsers\AdminUsersResource::class,
             ],
         ],
     ],
@@ -432,7 +433,7 @@ return [
             ],
             4 => [
                 'name' => 'password',
-                'required' => true,
+                'required' => false,
                 'filters' => [],
                 'validators' => [],
             ],
