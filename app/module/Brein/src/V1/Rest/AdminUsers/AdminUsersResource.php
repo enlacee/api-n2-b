@@ -43,7 +43,13 @@ class AdminUsersResource extends DbConnectedResource
 
 		$newData['updated_at'] = date('Y-m-d H:i:s');
 
-		return $this->table->update($newData, array('id' => $id));
+		$rs =  $this->table->update($newData, array('id' => $id));
+
+		if ($rs === 0) {
+			return new ApiProblem(404, '');
+		}
+
+		return true;
 	}
 
 	public function delete($id)
