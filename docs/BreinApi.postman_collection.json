@@ -40,10 +40,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8888/login",
+							"raw": "http://10.238.99.246:8888/login",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"10",
+								"238",
+								"99",
+								"246"
 							],
 							"port": "8888",
 							"path": [

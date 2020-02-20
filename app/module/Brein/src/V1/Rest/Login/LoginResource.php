@@ -15,7 +15,7 @@ class LoginResource extends AbstractResourceListener
 	}
 
 	/**
-	 * Create a resource
+	 * Login POST
 	 *
 	 * @param  mixed $data
 	 * @return ApiProblem|mixed

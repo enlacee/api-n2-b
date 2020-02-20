@@ -24,6 +24,8 @@ class AdminUsersEntity extends ArrayObject
 
 	public $updated_at;
 
+	// extraField
+	public $admin_roles_id_name;
 
 	public function getArrayCopy()
 	{
@@ -37,6 +39,8 @@ class AdminUsersEntity extends ArrayObject
 			'is_superuser' => $this->is_superuser,
 			'created_at' => $this->created_at,
 			'updated_at' => $this->updated_at,
+
+			'admin_roles_id_name' => $this->admin_roles_id_name
 		);
 	}
 
@@ -51,5 +55,7 @@ class AdminUsersEntity extends ArrayObject
 		$this->is_superuser = $array['is_superuser'];
 		$this->created_at = $array['created_at'];
 		$this->updated_at = $array['updated_at'];
+
+		$this->admin_roles_id_name = $array['admin_roles_id_name'];
 	}
 }
