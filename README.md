@@ -3,6 +3,11 @@ BREIN
 Copyright (C) 2018 Nodos \<http://nodos.pe\>
 
 
+## PHP EXTENSION
+
+	sudo apt-get install php7.2-bcmath
+	sudo apt-get install php7.2-gmp
+
 ## Enviroment dev
 
 	cd app
@@ -27,4 +32,9 @@ Copyright (C) 2018 Nodos \<http://nodos.pe\>
 Util para crear tablas
 
 	vendor/bin/phinx create MyFirstMigration
+
+
+## Status Response
+
+	/app/vendor/laminas/laminas-http/src/Response.php
 
